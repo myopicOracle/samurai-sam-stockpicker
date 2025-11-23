@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dodgy Dave's Stock Predictions</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<header>
+			<img src="images/logo.png" alt="Dodgy Dave's Stock Predictions">
+		</header>
+		<main>
+			<section class="action-panel">
+				<p class="tag-line" style="font-size: 1.5em; font-family: Chokokutai; line-height: 0.4em;">Samurai Sam's </p>
+				<p class="tag-line" style="font-size: 1.1em; line-height: 0;">Stock Reports Powered by GPT-5</p>
+				<form id="ticker-input-form">
+					<label for="ticker-input" style="font-size: 0.8em;"> Add up to 3 stock tickers below to generate a concise equity report based on live intra-day data (Polygon API) from last 3 trading days 👇 </label>
+					<div class="form-input-control">
+						<input type="text" id="ticker-input" placeholder="MSFT">
+						<button class="add-ticker-btn">
+							<img src="images/add.svg" class="add-ticker-svg" alt="add"> 
+						</button>
+					</div>
+				</form>
+				<p class="ticker-choice-display">
+					<span style="color: #999; font-size: 12px; padding: 1em;">Your tickers will appear here...</span><br>
+				</p>
+				<button class="generate-report-btn" type="button" disabled>
+					Generate Report
+				</button>
+				<span style="color: #999; font-size: 10px; padding: 1em;">*Not investment advice.*</span><br>
+			</section>
+			<section class="loading-panel">
+				<img src="images/loader.svg" alt="loading">
+				<div id="api-message">Querying Stocks API...</div>
+			</section>
+			<section class="output-panel">
+				<h2 style="background-color: lightgoldenrodyellow;">Your Report 😜</h2>
+			</section>
+		</main>
+		<footer style="font-size: 0.8em;">
+			Made with 🧀 by <a style="color: cyan;" href="https://github.com/myopicOracle">@myopicOracle</a>
+		</footer>
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
