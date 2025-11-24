@@ -1,11 +1,17 @@
 # Samurai Sam – AI-Powered Stock Reports
 > Parts of this README has been generated with AI.
 
-I built this project as a codelong during Scrimba’s [***AI Engineering Path***](https://scrimba.com/the-ai-engineer-path-c02v), so much of the frontend code is directly sourced from the lesson files - however I did build a similar solo project from scratch, which you can view here: [***Pollyglot AI Tutor***](https://project-pollyglot.vercel.app/)
+**Purpose:** I built this project as a codelong during Scrimba’s [***AI Engineering Path***](https://scrimba.com/the-ai-engineer-path-c02v), so much of the frontend code is directly sourced from the lesson files - however I did build a similar solo project from scratch, which you can view here: [***Pollyglot AI Tutor***](https://project-pollyglot.vercel.app/)
 
-This app represents a proof-of-concept for connecting real financial data to an LLM and serving it through a simple web UI. It lets users enter stock tickers, fetches recent price data from the Polygon API, and sends that data to an OpenAI model, which then writes a short equity-style report.
+**Function:** This app represents a proof-of-concept for connecting real financial data to an LLM and serving it through a simple web UI. It lets users enter stock tickers, fetches recent price data from the Polygon API, and sends that data to an OpenAI model, which then writes a short equity-style report.
 
----
+
+## Demo
+
+#### Live Link: https://samurai-sam-stock-picker.vercel.app/
+
+![Samurai Sam Stockpicker GUI](/public/cover.jpg)
+
 
 ## What this project is about
 
@@ -22,7 +28,6 @@ This app represents a proof-of-concept for connecting real financial data to an 
   - One Worker for Polygon.
   - One Worker for OpenAI.
 
----
 
 ## How it works
 
@@ -72,7 +77,6 @@ This app represents a proof-of-concept for connecting real financial data to an 
 - Turning numeric time series data into something an LLM can reason about.
 - Using the OpenAI Node SDK inside Cloudflare Workers.
 
----
 
 ## Tech stack
 
@@ -89,7 +93,6 @@ This app represents a proof-of-concept for connecting real financial data to an 
 - **Tooling:**  
   - Cloudflare Wrangler for local dev and deployment.
 
----
 
 ## Running the project (high level)
 
@@ -111,7 +114,6 @@ This is a rough outline; exact commands may vary depending on your setup.
 4. **Connect everything**
    - Point the frontend `fetch` calls at your deployed Worker URLs.
 
----
 
 ## What I learned
 
